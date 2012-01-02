@@ -6,6 +6,7 @@ gem 'rails', '3.1.3'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
 
 # Gems used only for assets and not required
@@ -18,6 +19,9 @@ end
 
 group :development do
   gem 'rspec-rails', '2.6.1'
+  gem 'annotate',:git =>'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
+      #'~>2.4.1.beta'
+  #,:git =>'git://github.com/jeremyolliver/annotate_models.git', :branch => 'rake_compatibility'
 end
 
 group :test do
@@ -26,6 +30,7 @@ group :test do
   gem 'spork', '0.9.0.rc8'
   gem 'autotest', '4.4.6'
   gem 'autotest-rails-pure', '4.1.2'
+  gem 'factory_girl_rails','1.0'
 end
 
 gem 'jquery-rails'
