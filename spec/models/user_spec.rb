@@ -11,7 +11,7 @@
 
 require 'spec_helper'
 
-describe User do
+describe "Users" do
    before(:each) do
      @attr={
          :name => "Ex User",
@@ -132,6 +132,10 @@ describe User do
     it "should set the encrypted password" do
       @user.encrypted_password.should_not be_blank
     end
+  end
+
+  describe "signup" do
+
   end
 
   #pending "add some examples to (or delete) #{__FILE__}"
